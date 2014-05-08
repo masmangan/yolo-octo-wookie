@@ -1,5 +1,11 @@
 package listaencadeada;
 
+/**
+ * 
+ * @author 10067320
+ *
+ * @param <E>
+ */
 public class ListLinked<E> implements ListTAD<E> {
 
 	private class Node<E> {
