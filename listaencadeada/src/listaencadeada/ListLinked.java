@@ -2,7 +2,7 @@ package listaencadeada;
 
 /**
  * 
- * @author 10067320
+ * @author 10067320 teste
  *
  * @param <E>
  */
@@ -55,12 +55,12 @@ public class ListLinked<E> implements ListTAD<E> {
 	public void add(E e) {
 		// a) Criar um novo nodo
 		Node<E> newNode = new Node<E>(e);
-		// b) Apontar do último nodo da lista (tail) para o novo
+		// b) Apontar do ï¿½ltimo nodo da lista (tail) para o novo
 		Node<E> t = tail;
 		tail = newNode;
 		// c) Aumentar o total de elementos em um (count)
 		count++;
-		// d) Agora, o último nodo passa a ser o novo
+		// d) Agora, o ï¿½ltimo nodo passa a ser o novo
 		if (t == null)
 			head = newNode;
 		else
@@ -71,11 +71,11 @@ public class ListLinked<E> implements ListTAD<E> {
 	public void add(int index, E element) {
 		//  a) Criar um novo nodo
 		Node<E> newNode = new Node<E>(element);
-		//  b) Se a posição for inválida, gerar IndexOutOfBoundsException
+		//  b) Se a posiï¿½ï¿½o for invï¿½lida, gerar IndexOutOfBoundsException
 		if (index < 0 || index > count) {
 			throw new IndexOutOfBoundsException();
 		}
-		// TODO c) "Caminhar" até a posição anterior à desejada (ant)
+		// TODO c) "Caminhar" atï¿½ a posiï¿½ï¿½o anterior ï¿½ desejada (ant)
 		// FIXME fatorar com add
 		if (head == null) {
 			head = newNode;
